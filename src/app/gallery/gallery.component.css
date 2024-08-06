@@ -1,0 +1,32 @@
+.gallery-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .gallery-title {
+    font-family: cursive;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Increase minmax for larger images */
+    gap: 20px; /* Larger gap for better spacing */
+    padding: 20px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add shadow for better depth perception */
+  }
+  
+  .photo img:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+  }
+  
